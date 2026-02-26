@@ -22,7 +22,7 @@ services:
 
 
   app:
-    build: ./app
+    image: aravind000/task-manager:latest
     environment:
       DATABASE_URL: postgresql://postgres:postgres@db:5432/tasksdb
     ports:
