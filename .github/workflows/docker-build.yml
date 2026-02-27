@@ -25,4 +25,6 @@ jobs:
         with:
           context: ./app
           push: true
-          tags: aravind000/task-manager:latest
+          tags: |
+            aravind000/task-manager:${{ github.sha }}
+            aravind000/task-manager:latest
